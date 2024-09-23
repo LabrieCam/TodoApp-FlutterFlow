@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "939923419134",
+    "project_id": "todo-qaddtk",
+    "storage_bucket": "todo-qaddtk.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:939923419134:android:3cff20e927fc7bda5e1aaf",
+        "android_client_info": {
+          "package_name": "com.mycompany.todo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5D7Z8Nc4ycBVolenq4am5vCdij2dSXFo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
