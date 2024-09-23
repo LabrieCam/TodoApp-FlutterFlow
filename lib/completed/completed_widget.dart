@@ -65,7 +65,7 @@ class _CompletedWidgetState extends State<CompletedWidget> {
             width: double.infinity,
             height: double.infinity,
             decoration: BoxDecoration(
-              color: FlutterFlowTheme.of(context).primary,
+              color: FlutterFlowTheme.of(context).tertiary,
               borderRadius: BorderRadius.circular(50.0),
               border: Border.all(
                 color: FlutterFlowTheme.of(context).primaryText,
