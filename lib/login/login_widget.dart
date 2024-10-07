@@ -1,4 +1,5 @@
 import '/auth/firebase_auth/auth_util.dart';
+import '/backend/api_requests/api_calls.dart';
 import '/backend/backend.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
@@ -743,6 +744,18 @@ class _LoginWidgetState extends State<LoginWidget>
                                     ),
                                     createdTime: getCurrentTimestamp,
                                   ));
+
+                              await SendEmailToUserCall.call(
+                                to: _model.signupEmailTextController.text,
+                                subject: valueOrDefault<String>(
+                                  '',
+                                  'Welcome to Todo App!',
+                                ),
+                                text: valueOrDefault<String>(
+                                  '',
+                                  'Create and Manage Tasks: Easily add new tasks and organize them into lists. Set due dates and priorities to keep track of what\'s important. Cross-Device Sync: Access your to-do lists from any device. Whether you\'re on your phone, tablet, or computer, your tasks are always up-to-date. Reminders and Notifications: Never miss a deadline with our customizable reminders. Get notified about upcoming tasks and stay on top of your schedule. Collaborate with Others: Share your lists with friends, family, or colleagues. Work together on projects and keep everyone in the loop. Customizable Themes: Personalize your app experience with a variety of themes and color options to suit your style. We\'re committed to providing you with the best experience possible. If you have any questions or need assistance, feel free to reach out to our support team at cameron_labrie@uri.edu. Thank you for choosing the Todo App. We look forward to helping you achieve your goals! Best regards, The Todo App Team',
+                                ),
+                              );
 
                               context.goNamedAuth(
                                   'onboarding', context.mounted);
