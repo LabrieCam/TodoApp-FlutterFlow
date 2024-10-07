@@ -469,6 +469,13 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
                   borderRadius: BorderRadius.circular(24.0),
                 ),
               ),
+              Text(
+                'Account created! check email for welcome message ',
+                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                      fontFamily: 'Inter',
+                      letterSpacing: 0.0,
+                    ),
+              ),
             ],
           ),
         ),
